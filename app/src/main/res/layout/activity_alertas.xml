@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alertas"
+    android:orientation="vertical"
+    android:background="@drawable/mobile">
+
+    <TextView
+        android:text="Cadastro de Alerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Titulo:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        />
+
+    <TextView
+        android:text="Categoria:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        />
+
+    <TextView
+        android:text="Mensagem:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/editTextMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnInserir"
+            android:text="Inserir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Inserir"
+            />
+
+        <Button
+            android:id="@+id/btnFechar"
+            android:text="Fechar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Fechar"
+            />
+
+       <Button
+            android:text="Listar"
+            android:id="@+id/btnListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Listar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
